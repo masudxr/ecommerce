@@ -5,7 +5,7 @@ import multer from 'multer';
 // import { db } from './db.js';
 
 import { regUser } from './users/user.db.js';
-import { logIN, LogOut } from './users/user.service.js';
+import { logIN as logIn, LogOut } from './users/user.service.js';
 import { contactReq } from './contact/contact.db.js';
 import { postDataById, findProducts, removeProduct, productsShop, homehandeler} from './products/product.service.js';
 import { shopHandeler } from './products/products.db.js';
@@ -100,7 +100,7 @@ app.get('/signin', (req, res) => {
   res.render('signin', { title: 'Signing Here!' });
 });
 
-app.post('/signin', logIN);
+app.post('/signin', logIn);
 
 app.get('/logout', LogOut);
 
