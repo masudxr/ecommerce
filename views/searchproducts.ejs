@@ -1,0 +1,21 @@
+<%- include('./header.ejs') %>
+
+<div class="post">
+    <h2>
+        Here Product Details.
+    </h2>
+    <p>Product Name: <%= row.p_name %></p>
+    <p>Product Description: <%= row.p_description %></p>
+    <p>Product Price: <%= row.p_price %> </p>
+    <br>
+   <% if(row.p_img){ %> 
+    <p>Product img: <img src=../<%= row.p_img %> /></p>
+    <%} else {%>
+    <p>Product img: No Image Present At This Moment</p>
+    <% } %>
+</div>
+
+
+
+</body>
+ </html>

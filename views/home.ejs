@@ -1,0 +1,264 @@
+<%- include('./header.ejs') %>
+    <div class="databody">
+        <div class="hero">
+            <h4>Trade-in-offer</h4>
+            <h2>Super Value Deals</h2>
+            <h1> On all Products</h1>
+            <p>Save more with coupons & up to 70% off!!</p>
+            <a href="/shopping"><button>Shop Now</button></a>
+        </div>
+
+
+
+
+        <% if (products.length>= 0){ %>
+            <% for (let i=0; i< products.length; i++) {%>
+                <div class="perpost">
+                    <a href=/product/<%=products[i].p_id %>> <h2>Product Name: <%= products[i].p_name %>
+                        </h2></a>
+                    <p>Product Description:<%= products[i].p_description %>
+                    </p>
+                    <p>Product Price:<%= products[i].p_price %>
+                    </p>
+                    <p>Uploaded Time:<%=new Date(products[i].Date).getDate() %>/<%= new
+                                Date(products[i].Date).getMonth() %>/<%= new Date(products[i].Date).getFullYear()%>
+                    </p>
+                    <p>Seller ID:<%= products[i].User_id %>
+                    </p>
+                    <br>
+                    <% if (logedIn==products[i].User_id) {%>
+                        <a href=/<%=products[i].p_id %>/remove ><button>Delete Item</button></a>
+                        <% } %>
+                </div>
+            <% } %>
+        <% } %>
+
+    </div>
+    <div>
+        <!-- <h2 style="text-align: center;padding: 10px;"> Products Category</h2> -->
+    </div>
+    <div class="itemfeature">
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../img.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../ban.jpg" alt="">
+            <h6>Online Order</h6>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../toydoll.jpeg" alt="">
+            <h6>Save Money</h6>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../img_m.jpg" alt="">
+            <h6>promotions</h6>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../logo.jpg" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../img.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+</div>
+
+<div>
+    <h2 style="text-align: center;padding: 10px;">Featured Products</h2>
+    <p style="text-align: center;padding: 10px;"> Winter Collection New Modern Design</p>
+</div>
+<div class="feapro">
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$175</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$101</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$105</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$65</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$771</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$705</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$175</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../toydoll.jpeg" alt="">
+                <div>
+                    <span>Adidas</span>
+                    <h6>Cartoon Astronaut T-shirt</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$70</h4>
+                </div>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<%- include('./footer.ejs') %>

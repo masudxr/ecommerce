@@ -1,0 +1,477 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(175, 170, 170);
+    margin:15px auto ;
+    max-width: 100%;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* border-style:solid;
+    border-radius: 4px; */
+}
+.template {
+    width: 100%;
+    margin:0 auto;
+    color: #fff;
+}
+.headersection{
+    height: 85px;
+    background: rgb(238, 224, 224);
+    color:lightblue;
+    border-radius: 10px;
+}
+.headersection h2{
+    color: rgb(5, 0, 0);
+    font-size: 40px;
+    padding-top: 17px;
+    text-align: center;
+    text-shadow: 2px 2px;
+
+}
+
+  
+
+/* navigation bar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    background: #9d9fa5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-list li{
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+ }
+ .nav-list li a:hover,
+ .nav-list li a.active{
+    color: #4776E6;
+ }
+ .nav-list li a:hover::after,
+ .nav-list li a.active::after{
+    content: "";
+    background-color: #4776E6;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+ }
+/* navigation bar */
+/* search bar */
+.search-wrapper{
+    text-align: right;
+    margin-top: 9px;
+    margin-right: 10px;
+    padding: 0px;
+}
+.search-wrapper input{
+    width: 250px;
+    border-radius: 5px;
+}
+.search-wrapper button{
+    border-radius: none;
+}
+/* search bar */
+/* home page */
+.hero{
+    background-image: url("./toydoll.jpeg");
+    height: 90vh;
+    width: 91.25%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h4{
+    padding-bottom: 15px;
+}
+.hero h1{
+    color: #088178;
+}
+.hero button{
+    background-image: url("./logo.jpg");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* feature */
+.section-p1{
+    padding: 20px 40px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+
+}
+.itemfeature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 14px;
+    margin: 15px 0;
+
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+
+}
+/* #feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+} */
+.feapro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+}
+
+/* products feature */
+#product1 .pro{
+    width: 23%;
+    min-width: 320px;
+    /* text-align: center; */
+    padding: 10px 12px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    margin: 10px 0;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+
+}
+#product1 .pro img{
+    width: 320px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+
+p,h1,h3,a,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(10, 8, 8);
+}
+/* users form */
+div.main{
+    width: 500px;
+    margin: 100px auto 0px auto;
+}
+h2{
+    font-family: sans-serif;
+}
+div.users{
+    width: 97%;
+    border-radius: 2px;
+    /*border: 1px solid rgba(255, 255, 255, 0.3); */
+    font-size: 18px;
+    /* background-color: rgb(9, 37, 37); */
+
+}
+.bloghere{
+    margin: 2px;
+    border-style: dotted;
+    padding-left: 40%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.perpost{
+    border-style: dotted;
+    margin: 2px;
+}
+.perpost h4{
+    color: rgb(61, 177, 216);
+    padding-left: 9px;
+}
+.perpost button{
+    color: rgb(235, 16, 16);
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    padding-right: 3px;
+    margin: 5px;
+}
+.databody{
+    border-style: double;
+    border-radius: 7px;
+
+}
+.databody h2{
+    font-family: Arial;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: cadetblue;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.databody p{
+    font-family: Arial;
+    font-size: 17px;
+    font-style: normal;
+    padding-left: 10px;
+    padding-bottom: 6px;
+
+}
+.databody h4{
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: black;
+}
+.footer{
+    margin-top: 2px;
+    padding-left: 40%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    border-style: double;
+    border-radius: 7px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.input-field input {
+    padding: 0.8rem;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    color: white;
+    border-radius: 4px;
+    margin-top: 2rem;
+    padding: 0.4rem;
+}
+/* blog page design */
+.post{
+    border-style: double;
+    margin-top: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-style: double;
+}
+.post img{
+    width: 200px;
+}
+.post h2{
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.Create-Users-Comments{
+    border-style: double;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.Create-Users-Comments h2{
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+}
+.Create-Users-Comments label{
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.Create-Users-Comments textarea, input{
+    width: 500px;
+    height: 30px;
+}
+.Create-Users-Comments textarea{
+    height: 50px;
+}
+.b{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* reate Blog design */
+.blogss{
+    border-style: double;
+    padding: 10px;
+    margin: 2px;
+}
+.blogss label{
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.blogss h2{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+.form-info{
+    border-style: double;
+    padding: 10px;
+    margin: 2px;
+}
+.blogss textarea, input{
+    width: 500px;
+    height: 30px;
+}
+.blogss textarea{
+    height: 60px;
+}
+.usersbody{
+    /* display: flex; */
+   
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-content: flex-start; */
+    /* align-items: flex-start; */
+    border-style: double;
+}
+.usersbody p{
+    border-style: double;
+    max-width: 100%;
+    /* height: 60px; */
+    padding: 1px;
+    margin: 3px;
+    
+}
+.usersbody2 h2{
+    padding-left: 40%;
+}
+.users{
+    margin: 0px;
+    border-style:solid;
+    border-radius: 4px;
+    padding: 10px;
+}
+.users h2{
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+}
+.users label{
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.users input{
+    width: 500px;
+    height: 30px;
+}
+
+.form-info{
+    margin: 10px;
+    border-style:solid;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.b{
+    padding: 10px;
+}
+
+/* create products section */
+.products{
+    border-style: double;
+    padding: 10px;
+}
+.products h2{
+    text-align: center;
+    font-size: xx-large;
+    /* text-decoration: underline; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.products label{
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.products input{
+    padding: 3px;
+}
+.products textarea{
+    max-width: 505px;
+    height: 100px;
+}
+.products button{
+    padding-top: 7px;
+    max-width: 150px;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+

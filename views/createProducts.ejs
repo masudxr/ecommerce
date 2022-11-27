@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> My First WS ! <%= title %></title>
+    <link rel="stylesheet" href="/main.css" type="text/css">
+</head>
+<body>
+    <div class="headersection" template>
+        <a href="/">
+            <h2> Online Shop!! </h2>
+        </a>
+    </div>
+
+ <section id="header">
+            <a href="/"><img src="/logo.jpg" class="logo" alt=""></a>
+            <div>
+                <ul class="nav-list" template>
+                    <li><a class="active"href="/">
+                            <h2>Home</h2>
+                        </a></li>
+                    <li><a href='/bloging'>
+                            <h2>Blog</h2>
+                        </a></li>
+                    <li><a href='/about'>
+                            <h2>About</h2>
+                        </a></li>
+                    <li><a href='/contact'>
+                            <h2>Contact</h2>
+                        </a></li>
+                        <form action="/search" method="get">
+                            <div class="search-wrapper">
+                                <input name="name" type="search" id="search" placeholder="Search Products">
+                                <a href=/search/:name><button type="submit">Search</button></a>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </section>
+
+
+<div class="products">
+    <h2> Add Your Products Here </h2>
+    <form action="/create" method="post"   enctype="multipart/form-data"> 
+            <label for="name">Products Name:</label>
+            <!-- <br> -->
+            <input type="text" id="name" placeholder="Products Name" name="name" required>
+            <br><br>
+            <br>
+
+            <label for="name">Products Description:</label>
+            <br>
+            <textarea id="body" placeholder="Type Your Products Description Here!! " required name="body"></textarea>
+            <br><br>
+        
+            <label for="id">Products Price:</label>
+            <br>
+            <input type="number" id="price" placeholder="Products Price" name="price" required>
+            <br><br>
+            <input type="file" name="avatar" multiple>
+            <!-- <input type="file" name="gallery" multiple> -->
+            <br>
+            <br>
+            <button> Create Products List</button>
+    </form>
+</div>
+
+<%- include('./footer.ejs') %>

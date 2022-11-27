@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> My First WS ! <%= title %></title>
+    <link rel="stylesheet" href="/main.css" type="text/css">
+</head>
+<body>
+    <div class="headersection" template>
+        <a href="/">
+            <h2> Online Shop!! </h2>
+        </a>
+    </div>
+
+ <section id="header">
+            <a href="/"><img src="/logo.jpg" class="logo" alt=""></a>
+            <div>
+                <ul class="nav-list" template>
+                    <li><a href="/">
+                            <h2>Home</h2>
+                        </a></li>
+                        <li><a href='/registration'>
+                            <h2>Registration</h2>
+                        </a></li>
+                    <li><a class="active" href='/contact'>
+                            <h2>Contact</h2>
+                        </a></li>
+                        <form action="/search" method="get">
+                            <div class="search-wrapper">
+                                <input name="name" type="search" id="search" placeholder="Search Products">
+                                <a href=/search/:name><button type="submit">Search</button></a>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </section>
+    
+<div class="products">
+<form action="/contact" method="post">
+    <h2>Get In Touch</h2>
+    <p style="text-align: center;">Email: masudxr@gmail.com</p>
+
+    <label for="name">Your Name:</label>
+    <br>
+    <input type="text" id="name" placeholder="Give Me Your Name" name="name" required>
+    <br><br>
+    <label for="email">Your Email:</label>
+    <br>
+    <input type="text" id="email" placeholder="Give Me Your Email" name="email" required>
+    <br><br>
+
+    <label for="email">Your Phone Number:</label>
+    <br>
+    <input type="text" id="email" placeholder="Give Me Your Phone Number" name="phone" required>
+    <br><br>
+    <label for="name"> Your Text Body:</label>
+    <br>
+    <textarea id="body" placeholder="Type Your Comments Here!! " required name="body"></textarea>
+    <br><br>
+    <input type="submit" value="LogIn">
+</form>
+</div>
+
+<%- include('./footer.ejs') %>
