@@ -12,7 +12,7 @@ import { shopHandeler } from './products/products.db.js';
 
 
 const app = express();
-const port = 3000;
+const port = 3010;
 
 app.set('view engine', 'ejs');
 app.set('views', '../views');
@@ -146,7 +146,6 @@ app.post('/contact',contactReq);
 app.get('/blog', (req, res) => {
   res.render('blog', { title: 'Write and Read Blog' });
 });
-
 
 
 
