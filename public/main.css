@@ -264,21 +264,105 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(./toydoll.jpeg);
+    background-image: url(./banner.jpg);
     width: 100%;
     height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#banner h4{
+    color: #fff;
+    font-size: 20px;
+
+}
+#banner h2{
+    color: #fff;
+    font-size: 35px;
+    padding: 20px 0;
 }
 
-#banner{
+#banner h2 span{
+    color: #ef3636;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+/* Action Banner */
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(./ban.jpg);
-    width: 100%;
-    height: 40vh;
+    align-items: flex-start;
+    background-image: url(./crazy.webp);
+    min-width: 45%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 30px;
 }
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight:800 ;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight:500;
+    padding-bottom: 15px;
+}
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+#sm-banner .banner-box2{
+    background-image: url(./summer.jpeg);
+}
+
+
+
 
 p,h1,h3,a,ul{
     margin: 0;
