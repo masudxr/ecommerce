@@ -209,6 +209,17 @@ body{
     border-radius: 20px;
 }
 
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./ban.jpg);
+    width: 100%;
+    height: 40vh;
+}
+
 p,h1,h3,a,ul{
     margin: 0;
     padding: 0;
