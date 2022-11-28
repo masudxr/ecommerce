@@ -148,7 +148,7 @@ body{
 
 }
 #feature .fe-box{
-    width: 180px;
+    max-width: 180px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
@@ -189,7 +189,6 @@ body{
 #product1 .pro{
     width: 23%;
     min-width: 320px;
-    /* text-align: center; */
     padding: 10px 12px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
     border: 1px solid #cce7d0;
@@ -197,18 +196,18 @@ body{
     margin: 10px 0;
     transition: 0.2s ease;
     cursor: pointer;
+
+  
 }
 #product1 .pro:hover{
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
 
 }
 #product1 .pro img{
-    width: 320px;
+    max-width: 320px;
     margin-bottom: 10px;
     border-radius: 20px;
 }
-
-
 
 p,h1,h3,a,ul{
     margin: 0;
