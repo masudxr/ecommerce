@@ -38,7 +38,7 @@ export async function allUsers(req, res){
 }
 
 // User Logout Function
-export function LogOut(req, res, next) {
+export function logOut(req, res, next) {
   req.session.user = null;
   req.session.save(function (err) {
     if (err) next(err);
