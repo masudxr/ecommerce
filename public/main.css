@@ -181,12 +181,14 @@ body{
 /* products feature *//* products feature *//* products feature */
 .feapro{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
 }
 
 #product1 .pro{
-    width: 23%;
+    width: 24%;
     min-width: 320px;
     padding: 10px 12px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -196,6 +198,8 @@ body{
     transition: 0.2s ease;
     cursor: pointer;
     position: relative;
+    align-items: stretch;
+
 }
 
 /* #product1 .pro-container{
@@ -303,7 +307,7 @@ button.normal {
 /* Action Banner */
 #sm-banner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: row wrap;
     /* align-items: center; */
 }
