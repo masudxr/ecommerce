@@ -102,7 +102,7 @@ body{
 .hero{
     background-image: url("./toydoll.jpeg");
     height: 90vh;
-    width: 91.25%;
+    width: 87.5%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -110,6 +110,7 @@ body{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    border-radius: 5px;
 }
 .hero h4{
     padding-bottom: 15px;
@@ -181,15 +182,15 @@ body{
 /* products feature *//* products feature *//* products feature */
 .feapro{
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
     flex-flow: row wrap;
 
 }
 
 #product1 .pro{
-    width: 24%;
-    min-width: 320px;
+    width: 23%;
+    min-width: 200px;
     padding: 10px 12px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     border: 1px solid #cce7d0;
@@ -215,7 +216,7 @@ body{
 
 }
 #product1 .pro img{
-    max-width: 320px;
+    max-width: 200px;
     margin-bottom: 10px;
     border-radius: 20px;
 }
@@ -364,9 +365,9 @@ button.white {
 }
 #banner3 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 80px;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+    padding: 10px 54px;
 }
 
 
@@ -376,7 +377,7 @@ button.white {
     justify-content: space-around;
     align-items: flex-start;
     background-image: url(./crazy.webp);
-    min-width: 30%;
+    min-width: 29%;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -404,7 +405,7 @@ button.white {
 
 #newsletter{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     background-image: url("./banner.jpg");
@@ -415,7 +416,6 @@ button.white {
 
 
 }
-
 #newsletter h4{
     color: #fff;
     font-weight: 700;
@@ -775,11 +775,11 @@ form input[type="submit"] {
 
 
 /* start media query */
-@media (max-width:799px) {
+/* @media (max-width:799px) {
     .nav-list{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
     }
-}
+} */
