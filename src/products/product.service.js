@@ -49,18 +49,18 @@ export function removeProduct(req, res) {
 
 
 // show all products in the shopping file
-export async function productsShop(req, res) {
-  // const products = await products();
-  const user = await users();
+export function productsShop(req, res) {
+  const product =  products();
+  const user = users();
   const logedIn = req.session.userid;
-  res.render('shopping', {title: 'All products', products, logedIn, user});
+  res.render('shopping', {title: 'All products', product, logedIn, user});
 }
 
 // show all products in the home file
-export async function homehandeler(req, res) {
-  // const products = await products();
-  const user = await users();
+export function homehandeler(req, res) {
+  const product = products();
+  const user = users();
   const logedIn = req.session.userid;
-  res.render('home', {title: 'All products', products ,logedIn, user});
+  res.render('home', {title: 'All products', product ,logedIn, user});
 }
 

@@ -9,23 +9,23 @@
             <a href="/shopping"><button>Shop Now</button></a>
         </div>
 
-        <% if (products.length>= 0){ %>
-            <% for (let i=0; i< products.length; i++) {%>
+        <% if (product.length>= 0){ %>
+            <% for (let i=0; i< product.length; i++) {%>
                 <div class="perpost">
-                    <a href=/product/<%=products[i].p_id %>> <h2>Product Name: <%= products[i].p_name %>
+                    <a href=/product/<%=product[i].p_id %>> <h2>Product Name: <%= product[i].p_name %>
                         </h2></a>
-                    <p>Product Description:<%= products[i].p_description %>
+                    <p>Product Description:<%= product[i].p_description %>
                     </p>
-                    <p>Product Price:<%= products[i].p_price %>
+                    <p>Product Price:<%= product[i].p_price %>
                     </p>
-                    <p>Uploaded Time:<%=new Date(products[i].Date).getDate() %>/<%= new
-                                Date(products[i].Date).getMonth() %>/<%= new Date(products[i].Date).getFullYear()%>
+                    <p>Uploaded Time:<%=new Date(product[i].Date).getDate() %>/<%= new
+                            Date(product[i].Date).getMonth() %>/<%= new Date(product[i].Date).getFullYear()%>
                     </p>
-                    <p>Seller ID:<%= products[i].User_id %>
+                    <p>Seller ID:<%= product[i].User_id %>
                     </p>
                     <br>
-                    <% if (logedIn==products[i].User_id) {%>
-                        <a href=/<%=products[i].p_id %>/remove ><button>Delete Item</button></a>
+                    <% if (logedIn==product[i].User_id) {%>
+                        <a href=/<%=product[i].p_id %>/remove ><button>Delete Item</button></a>
                         <% } %>
                 </div>
             <% } %>

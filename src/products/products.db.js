@@ -34,9 +34,3 @@ export async function shopHandeler(req, res) {
   
   // res.render('home', {title: 'All products', logedIn, user});
 }
-
-
-
-
-
-

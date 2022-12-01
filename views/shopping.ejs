@@ -1,24 +1,24 @@
 <%- include('./header.ejs') %>
 
 <div class="databody">
-<% if (products.length >= 0){ %>
-    <% for (let i=0; i< products.length; i++) {%>
+<% if (product.length >= 0){ %>
+    <% for (let i=0; i< product.length; i++) {%>
     <div class="perpost">
-       <a href=/product/<%= products[i].p_id %>> <h2>Products Name: <%= products[i].p_name %></h2></a>
-        <p>Products Description:<%= products[i].p_description %></p>
-        <p>Products Price:<%= products[i].p_price %></p>
-        <p>Uploaded Time:<%=new Date(products[i].Date).getDate() %>/<%= new Date(products[i].Date).getMonth() %>/<%= new Date(products[i].Date).getFullYear()%></p>
-        <p>Seller ID:<%= products[i].User_id %></p> 
+       <a href=/product/<%= product[i].p_id %>> <h2>Products Name: <%= product[i].p_name %></h2></a>
+        <p>Products Description:<%= product[i].p_description %></p>
+        <p>Products Price:<%= product[i].p_price %></p>
+        <p>Uploaded Time:<%=new Date(product[i].Date).getDate() %>/<%= new Date(product[i].Date).getMonth() %>/<%= new Date(product[i].Date).getFullYear()%></p>
+        <p>Seller ID:<%= product[i].User_id %></p> 
         <br>
-        <% if (logedIn == products[i].User_id) {%>
-        <a href=/<%= products[i].p_id %>/remove ><button>Delete Item</button></a>
+        <% if (logedIn == product[i].User_id) {%>
+        <a href=/<%= product[i].p_id %>/remove ><button>Delete Item</button></a>
         <% } %>
     </div>
     <% } %>
 <% } %>
-</div>
+<!-- </div>
 
-<div class="databody">
+<div class="databody"> -->
     <div class="page-header">
         <h2>#StayHome and Shopping Here</h2>
         <p>Save more with coupons & up to 70% off!!</p>

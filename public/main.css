@@ -101,8 +101,9 @@ body{
 /* home page */
 .hero{
     background-image: url("./toydoll.jpeg");
-    height: 90vh;
-    width: 87.5%;
+    height: 70vh;
+    /* width: 87.5%; */
+    background-position: 20% 30%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -587,11 +588,11 @@ div.users{
     padding-right: 3px;
     margin: 5px;
 }
-.databody{
+/* .databody{
     border-style: double;
     border-radius: 7px;
 
-}
+} */
 .databody h2{
     font-family: Arial;
     font-size: 25px;
