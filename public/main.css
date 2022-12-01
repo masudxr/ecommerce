@@ -183,8 +183,8 @@ body{
 .feapro{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-flow: wrap;
 
 }
 
@@ -509,8 +509,37 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
-
-
+/* shop page design */
+.page-header{
+    background-image: url("./banner.jpg");
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    background-size: cover;
+}
+.page-header p{
+    color: #fff;
+}
+/* pagination */
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+/* single product design */
+#prodetails .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
 
 
 p,h1,h3,a,ul{
