@@ -1,24 +1,30 @@
 import { db } from '../db.js';
 
-export function contactReq() {
-  return new Promise((resolve, reject) => {
-    console.log('req', resolve);
-    console.log('rej', reject);
+export function contactReq(req, res) {
+  // return new Promise((resolve, reject) => {
+  //   console.log('req', resolve);
+  //   console.log('rej', reject);
+  let data = req.body;
+  // console.log('req', data);
+  // console.log('req name', data.name);
+  // console.log('req email', data.email);
+  // console.log('req phone', data.phone);
+  db.run('INSERT INTO Contact (c_name, c_mail, c_number, c_body, c_date) VALUES ($name, $mail, $number, $body, $Date)', {
+    $name: data.name,
+    $mail: data.email,
+    $number: data.phone,
+    $body: data.body,
+    $Date: new Date().toISOString(),
 
-    db.run('INSERT INTO Contact (c_name, c_mail, c_number, c_body, c_date) VALUES ($name, $mail, $number, $body, $Date)', {
-      // eslint-disable-next-line no-undef
-      $name: contact.name,
-      // eslint-disable-next-line no-undef
-      $mail: product.body,
-      // eslint-disable-next-line no-undef
-      $number: product.price,
-      // eslint-disable-next-line no-undef
-      $body: logedIn,
-      $Date: new Date().toISOString(),
-
-    }, (err) => {
-      if (err) reject(err);
-      resolve();
-    });
+  }, (err)=>{
+    console.log('Users Error', err);
+    res.redirect ('/');
   });
 }
+
+//     }, (err) => {
+//       if (err) reject(err);
+//       resolve();
+//     });
+//   });
+// }
