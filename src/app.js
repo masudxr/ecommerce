@@ -10,6 +10,8 @@ import { contactReq } from './contact/contact.db.js';
 import { postDataById, findProducts, removeProduct, productsShop, homehandeler} from './products/product.service.js';
 import { shopHandeler } from './products/products.db.js';
 
+// const nodemailer = require("nodemailer");
+import nodemailer from 'nodemailer';
 
 const app = express();
 const port = 3010;
@@ -146,7 +148,6 @@ app.post('/contact',contactReq);
 app.get('/blog', (req, res) => {
   res.render('blog', { title: 'Write and Read Blog' });
 });
-
 
 
 
